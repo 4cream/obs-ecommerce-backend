@@ -1,0 +1,20 @@
+{
+  "name": "obs-ecommerce-backend",
+  "version": "1.0.0",
+  "description": "OBS Ecommerce Backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch obs-app/app/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Js"
+  ],
+  "author": "DG",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
