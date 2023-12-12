@@ -1,8 +1,10 @@
 import express, {json} from "express";
 import {productData} from "../api/api-products.js";
+import {corsMiddleware} from "../middlewares/cors.js";
 
 const app = express();
 app.use(json());
+app.use(corsMiddleware());
 
 app.get("/", (req, res) => {
     res.send("Hello, world!");
@@ -10,7 +12,6 @@ app.get("/", (req, res) => {
 
 app.get("/products", (req, res) => {
     const products = productData;
-    console.log("products = ", products);
     res.json(products);
 });
 
