@@ -1,9 +1,9 @@
-import {productData} from "../api/api-products.js";
+import {productData} from "../../api/api-products.js";
 
 export class ProductModel {
 
-    getAllProducts = async (req, res) => {
+    static getAllProducts = async () => {
         const products = productData;
-        res.json(products);
+        return products;
     }
 }

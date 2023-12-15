@@ -1,5 +1,5 @@
 import express, {json} from "express";
-import {createProductRouter} from "./routes/productRoutes.js";
+import {createProductRouter} from "../routes/productRoutes.js";
 import {corsMiddleware} from "../middlewares/cors.js";
 
 const app = express();
